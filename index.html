@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="converter-card">
+
+            <!-- Header -->
+            <header class="header">
+
+                <h1>🌡️ Temperature Converter</h1>
+
+                <p>
+                    Instantly convert temperatures between Celsius, Fahrenheit, and Kelvin.
+                </p>
+
+            </header>
+
+            <!-- Input -->
+            <section class="input-section">
+
+                <label for="temperature">
+                    Temperature
+                </label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter temperature">
+
+            </section>
+
+            <!-- Unit Selection -->
+            <section class="units">
+
+                <div class="unit-group">
+
+                    <label for="fromUnit">
+                        From
+                    </label>
+
+                    <select id="fromUnit">
+
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+
+                    </select>
+
+                </div>
+
+                <div class="swap-btn">
+
+                    <button id="swapBtn">
+
+                        🔄 Swap
+
+                    </button>
+
+                </div>
+
+                <div class="unit-group">
+
+                    <label for="toUnit">
+                        To
+                    </label>
+
+                    <select id="toUnit">
+
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+            <!-- Result -->
+            <section class="result-section">
+
+                <h2>Converted Temperature</h2>
+
+                <div id="result" class="result-box">
+
+                    --
+
+                </div>
+
+            </section>
+
+            <!-- Formula -->
+            <section class="formula-section">
+
+                <h3>Conversion Formula</h3>
+
+                <p id="formula">
+
+                    Select units to view the conversion formula.
+
+                </p>
+
+            </section>
+
+            <!-- Buttons -->
+            <section class="button-group">
+
+                <button id="copyBtn">
+
+                    📋 Copy Result
+
+                </button>
+
+                <button id="resetBtn">
+
+                    🗑️ Reset
+
+                </button>
+
+            </section>
+
+            <!-- Validation / Success Message -->
+            <p id="message" class="message"></p>
+
+            <!-- Temperature Scale Info -->
+            <section class="info-section">
+
+                <h2>📚 Temperature Scales</h2>
+
+                <article>
+
+                    <h3>🌡️ Celsius (°C)</h3>
+
+                    <p>
+                        Celsius is the most commonly used temperature scale worldwide.
+                        Water freezes at 0°C and boils at 100°C.
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>🔥 Fahrenheit (°F)</h3>
+
+                    <p>
+                        Fahrenheit is primarily used in the United States.
+                        Water freezes at 32°F and boils at 212°F.
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>❄️ Kelvin (K)</h3>
+
+                    <p>
+                        Kelvin is the SI base unit of temperature used in science.
+                        Absolute zero is 0 Kelvin.
+                    </p>
+
+                </article>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
